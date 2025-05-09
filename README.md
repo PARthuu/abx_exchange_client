@@ -7,8 +7,8 @@ A C++ client for interacting with the ABX mock exchange server.
 ```sh
 cmake . -B build
 cmake --build build
+mv build/abx_client .
 ```
-Client will be in `build` directory. 
 
 ## Run
 
