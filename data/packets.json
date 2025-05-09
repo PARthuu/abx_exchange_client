@@ -1,0 +1,100 @@
+[
+  {
+    "symbol": "AAPL",
+    "type": "B",
+    "qty": 50,
+    "price": 100,
+    "seq": 1
+  },
+  {
+    "symbol": "AAPL",
+    "type": "B",
+    "qty": 30,
+    "price": 98,
+    "seq": 2
+  },
+  {
+    "symbol": "AAPL",
+    "type": "S",
+    "qty": 20,
+    "price": 101,
+    "seq": 3
+  },
+  {
+    "symbol": "AAPL",
+    "type": "S",
+    "qty": 10,
+    "price": 102,
+    "seq": 4
+  },
+  {
+    "symbol": "META",
+    "type": "B",
+    "qty": 40,
+    "price": 50,
+    "seq": 5
+  },
+  {
+    "symbol": "META",
+    "type": "S",
+    "qty": 30,
+    "price": 55,
+    "seq": 6
+  },
+  {
+    "symbol": "META",
+    "type": "S",
+    "qty": 20,
+    "price": 57,
+    "seq": 7
+  },
+  {
+    "symbol": "MSFT",
+    "type": "B",
+    "qty": 25,
+    "price": 150,
+    "seq": 8
+  },
+  {
+    "symbol": "MSFT",
+    "type": "S",
+    "qty": 15,
+    "price": 155,
+    "seq": 9
+  },
+  {
+    "symbol": "MSFT",
+    "type": "B",
+    "qty": 20,
+    "price": 148,
+    "seq": 10
+  },
+  {
+    "symbol": "AMZN",
+    "type": "B",
+    "qty": 10,
+    "price": 3000,
+    "seq": 11
+  },
+  {
+    "symbol": "AMZN",
+    "type": "B",
+    "qty": 5,
+    "price": 2999,
+    "seq": 12
+  },
+  {
+    "symbol": "AMZN",
+    "type": "S",
+    "qty": 15,
+    "price": 3020,
+    "seq": 13
+  },
+  {
+    "symbol": "AMZN",
+    "type": "S",
+    "qty": 10,
+    "price": 3015,
+    "seq": 14
+  }
+]

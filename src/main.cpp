@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <set>
 #include <algorithm>
@@ -53,13 +54,27 @@ int main(int argc, char* argv[]) {
         return a.sequence < b.sequence;
     });
 
+    std::ofstream o("packets.json");
+    o << "[\n";
+    
+    bool first = true;
     for (const auto& p : packets) {
-        std::cout << "Symbol: " << p.symbol
-                  << ", Type: " << p.indicator
-                  << ", Qty: " << p.quantity
-                  << ", Price: " << p.price
-                  << ", Seq: " << p.sequence << '\n';
+        if (!first) {
+            o << ",\n";
+        }
+        first = false;
+        
+        o << "    {\n";
+        o << "        \"symbol\": \"" << p.symbol << "\",\n";
+        o << "        \"type\": \"" << p.indicator << "\",\n";
+        o << "        \"qty\": " << p.quantity << ",\n";
+        o << "        \"price\": " << std::fixed << std::setprecision(2) << p.price << ",\n";
+        o << "        \"seq\": " << p.sequence << "\n";
+        o << "    }";
     }
-
+    
+    o << "\n]";
+    o.close();
+    
     return 0;
 }

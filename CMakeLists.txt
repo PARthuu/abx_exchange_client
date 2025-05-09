@@ -4,7 +4,6 @@ project(abx_client)
 set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
-find_package(nlohmann_json CONFIG REQUIRED)
 
 add_executable(abx_client
     src/main.cpp
@@ -12,4 +11,3 @@ add_executable(abx_client
     src/packet.cpp
     src/utils.cpp
 )
-target_link_libraries(abx_client PRIVATE nlohmann_json::nlohmann_json)
