@@ -5,11 +5,10 @@ A C++ client for interacting with the ABX mock exchange server.
 ## Build
 
 ```sh
-mkdir build
-cd build
-cmake ..
-make
+cmake . -B build
+cmake --build build
 ```
+Client will be in `build` directory. 
 
 ## Run
 
@@ -21,6 +20,7 @@ Example:
 
 ```sh
 ./abx_client 127.0.0.1
+./abx_client localhost
 ```
 
-Output will be written to `data/output.json`
+Output will be written to `packages.json`
